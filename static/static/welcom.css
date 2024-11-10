@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 900;
+    
+}
+
+body{
+    color: white; 
+    overflow: hidden;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-color: #0d202fbf;
+    transition: 2s;
+    -webkit-user-drag:none ;
+}
+.next{
+    width: 61px;
+    border-radius: 20px;
+}
+.img1 , .img2 , .img3{
+    width: 153%;
+    height: 85vh;margin-top: 40px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.img1{
+    transform: translateX(17%);
+    }
+.img2{
+transform: translateX(-200%);
+}
+.img3{
+    transform: translateX(-400%);
+}
+.contener{
+
+transition: 1s;
+padding: 0px;
+background-image:url(/static/welcom-pro.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+transform: scaleX(-1);
+height: 0;
+}
+.all{
+    display: flex;
+    width: 0%;
+    height: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: black;
+    transform: scaleX(-1);
+    transition: 0.5s;
+    
+}
+.name h2{
+    margin: 10px;
+    transform: scaleX(-1);
+}
+.head h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+.right{
+width: 40%;
+height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.right .phone{
+    position: absolute;
+    left: 20px;
+    bottom: 56px;
+}
+.left{
+width: 60%;
+height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.left .mine{
+    margin-bottom: 90px;
+}
+.left .mine p{
+    border-radius: 14px;
+    margin: 30px;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 10px;
+}
+.left .footer {
+    position: absolute;
+    bottom: 84px;
+    right: 26px;
+    height: 10vh;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(53, 52, 52);
+    color: rgb(255, 255, 255);
+    width: 170px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    border-radius: 30px;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+}
+.left .footer a p{
+    width: 170px;
+    height: 10vh;display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.left .footer:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(199, 203, 195);
+    color: rgb(0, 0, 0);
+}
+.right .logo img{
+    width: 120%;
+}
+
+@media(max-width:1024px){
+.all{
+    display: flex;
+   
+}
+
+}

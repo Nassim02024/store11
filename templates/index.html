@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcom</title>
+    
+    <link rel="stylesheet" href="{{url_for('static' , filename='Welcom.css')}}">
+</head>
+<body>
+
+    <div class="imgs" style="width: 50%; height: 50vh; z-index: 1000000;position: absolute;display: flex;" >
+        <img class="img1" src="/static/sc3.jpg" alt="">
+        <img class="img2" src="/static/sc2.jpg" alt="">     
+        <img class="img3" src="/static/sc1.jpg" alt="">     
+    </div>
+    <div class="boton">
+        <span style="position: absolute;top: 50vh;right: 20px;width: 50px;z-index: 90000000;">
+            <p ><img class="next" src="/static/flech.jpg" alt=""></p>
+        </span>
+    </div>
+    <div class="contener">
+       
+        <div class="name">
+               <h3>Ben_Sassi Supermarket</h3>
+        </div>
+       <div class="all">
+        
+        <div class="right">
+            
+            <div class="phone">
+               <p>Phone: 0669010670</p> <br>
+               <p>Phone: 0669518673</p>
+            </div>
+        </div>
+ 
+        <div class="left">
+            <div class="head">
+                <h1>Welcom:</h1>
+            </div>
+            <div class="mine">
+               <p>1_ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, illo?</p>
+               <p>2_ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, amet.</p>
+               <p>3_ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, amet.</p>
+            </div>
+            <div class="footer">
+               <a href="{{url_for('home')}}" ><p>Next</p></a> 
+               
+            </div>
+        </div>
+
+    </div> 
+    </div>
+    <script src="{{url_for('static' , filename='Welcom.js')}}"></script>
+</body>
+</html>

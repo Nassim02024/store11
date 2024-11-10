@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static' , filename ='myDatabase.css')}}">
+    <title>DataBase</title>
+</head>
+<body>
+<div class="castemer">
+    <div class="order"><h1>طلبات العملاء:</h1></div>
+    <table class="table" border="1">
+        {% for datas in data %}
+        <tr class="tr">
+           <td>name</td>
+           <td>location</td>
+           <td>phone</td>
+           <td>text</td>
+           <td>prodact</td>
+        </tr>
+
+        <tr>
+            <td>{{datas[0]}}</td>
+            <td>{{datas[1]}}</td>
+            <td>{{datas[2]}}</td>
+            <td>{{datas[3]}}</td>
+            <td>{{datas[4]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+ </div>
+    <div class="modpasse">
+        <h1>Enter password</h1>
+        
+        <input class="passe" type="password" autocomplete="off" name="text"  placeholder="Enter Password">
+        <p>password Is Wrong</p>
+        <button class="neu-button">OK</button>
+    </div>
+</body>
+<script src="{{url_for ('static' , filename='myDatabase.js')}}" defer></script>
+</html> 
